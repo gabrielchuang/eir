@@ -30,8 +30,9 @@
                                           ealphab=ealphab,
                                           ealphaw=ealphaw,
                                           truth=truth),
-                              error=function(x) ei(t,x,n, id=id,
-                                      data=data, Zb=Zb, Zw=Zw,erho=3,esigma=esigma, ebeta=ebeta, ealphab=ealphab, ealphaw=ealphaw, truth=truth)), error=function(x) ei.estimate(t,x,n,
+                              error=function(y) ei(t,x,n, id=id,
+                                      data=data, Zb=Zb, Zw=Zw,erho=3,esigma=esigma, ebeta=ebeta, ealphab=ealphab, ealphaw=ealphaw, truth=truth)), 
+			      error=function(z) ei.estimate(t,x,n,
                                      id=id, data=data, Zb=Zb, Zw=Zw, erho=5,esigma=esigma, ebeta=ebeta, ealphab=ealphab, ealphaw=ealphaw, truth=truth))
     dbuf.sim <- ei.sim(dbuf)
     return(dbuf.sim)
